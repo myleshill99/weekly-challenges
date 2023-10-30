@@ -18,7 +18,8 @@ namespace ChallengesWithTestsMark8
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return S
         }
 
         public int Add(int number1, int number2)
