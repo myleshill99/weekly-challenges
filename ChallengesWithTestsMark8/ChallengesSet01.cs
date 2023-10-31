@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Security;
 
 namespace ChallengesWithTestsMark8
 {
@@ -6,7 +7,7 @@ namespace ChallengesWithTestsMark8
     {
         public bool AreTwoNumbersTheSame(int num1, int num2)
         {
-            if(num1 == num2)
+            if (num1 == num2)
             {
                 return true;
             }
@@ -25,13 +26,21 @@ namespace ChallengesWithTestsMark8
         public int Add(int number1, int number2)
         {
             //throw new NotImplementedException();
-            return number1 + number2;   
+            return number1 + number2;
         }
 
         public int GetSmallestNumber(int number1, int number2)
         {
-           //throw new NotImplementedException();
-           return number1 - number2 / 2;
+            //throw new NotImplementedException();
+            if (number1 < number2)
+            {
+                return number1;
+            } 
+            else 
+            {
+                return number2; 
+            }
+
         }
 
         public long Multiply(long factor1, long factor2)
@@ -43,13 +52,20 @@ namespace ChallengesWithTestsMark8
         public string GetGreeting(string nameOfPerson)
         {
             //throw new NotImplementedException();
-            return nameOfPerson;
+           if (nameOfPerson != "")
+            {
+                return $"Hello, {nameOfPerson}!";
+            }
+           else
+            {
+                return $"Hello!"; 
+            }
         }
 
         public string GetHey()
         {
             //throw new NotImplementedException();
-            return GetHey(); 
+            return "HEY!";
         }
     }
 }
