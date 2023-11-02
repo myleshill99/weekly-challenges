@@ -5,4 +5,8 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="C:\Users\James\Desktop\repos\ChallengesSet01.cs" Link="ChallengesSet01.cs" />
+  </ItemGroup>
+
 </Project>
